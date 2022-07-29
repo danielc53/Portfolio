@@ -1,0 +1,189 @@
+/*Sets whole webpage box model*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*sets webpage color*/
+body {
+    background-color:rgb(127, 255, 255)
+}
+
+/*sets text in header to unified color*/
+.header {
+    padding: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(33, 90, 155);
+    color: white;
+}
+
+/*sets layout of header title*/
+.header h1 {
+    display: inline-block;
+    text-shadow: rgb(255, 255, 255);
+    text-shadow: 25px;
+}
+
+.header nav {
+    float: right;
+    margin: 20px;
+}
+
+/*sets navigation link bar layout*/
+.header nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+    
+}
+
+a {
+    text-decoration: overline;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 24px;
+}
+
+.murial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*OLD
+.header {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aqua;
+    color: blue;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.title {
+    display: inline-block;  
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.aside {
+    list-style-type: underline;
+}
+
+
+.navigation {
+    display: inline-flex;
+    list-style-type: none;
+    white-space: 10px;
+}
+
+
+layout position of 5 content boxes
+main {
+   display: flex; 
+   flex-wrap: flex;
+}
+
+.contact-link {
+    display: inline-flex;
+    list-style-type: none;
+    
+}

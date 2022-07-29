@@ -1,0 +1,550 @@
+/*Sets whole webpage box model*/
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+
+/*sets webpage color*/
+body {
+    background-color: rgb(232, 232, 233);
+}
+
+
+/*sets text in header to unified color*/
+.header {
+    padding: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(33, 90, 155);
+    color: white;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: sticky;
+    
+}
+
+
+/*sets layout of header title*/
+.header h4 {
+    display: inline;
+    color: rgb(33, 90, 155);
+    outline: solid;
+    
+    outline-color: rgb(14, 14, 49);
+    background-color: rgb(14, 14, 49);
+    text-align: center;
+    outline-width: 15px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/*sets position of nav bar*/
+.header nav {
+    float: right;
+    margin-bottom: 50px;
+}
+
+
+header nav ul {
+    position: relative;
+    bottom: 50px;
+}
+
+
+/*sets navigation link bar layout*/
+.header nav ul li{
+    display: inline-flex;
+    margin-left: 25px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    
+    
+}
+
+
+a {
+/*nav bar decoration and styling*/
+    text-decoration: overline;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+
+/*sets font size of the content boxes*/
+h1 {
+    font-size: 24px;
+    align-content: left;
+}
+
+
+h2 {
+    font-size: 16px;
+}
+
+
+h3 {
+/*sets location of text inside header picture*/
+    float: right;
+    position: relative;
+    bottom: 200px;
+    right: 600px;
+/*sets text style of text inside picture*/
+}
+
+
+h4 {
+    font-size: 60px;
+}
+
+
+.murial {
+/*sets height of image viewport*/
+    height: 400px;
+
+/*sets width of image viewport*/
+    width: 100%;
+
+/*sets offset of text below image*/
+    margin-bottom: 50px;
+    
+/*specifies content to be dispalyed*/
+    background-image: url(../assets/Pictures/nature-background-EDIT.png);
+
+/*sets zoom level of picture*/
+    background-size: 80%;
+    
+/*sets what area of the picture is visible*/
+    background-position: center;
+
+    border-bottom-left-radius: 30px;
+
+    border-bottom-right-radius: 30px;
+
+    border-top-left-radius: 7px;
+
+    border-top-right-radius: 7px;
+}
+
+
+/*sets location of the aside bar on the left of the body*/
+aside {
+
+    float: left;
+    display: block;
+    
+}
+
+
+/*sets margin of the aside elements*/
+aside ul li {
+    margin-top: 60%;
+    margin-bottom: 60%;
+    text-align: right;
+    
+/*sets style of the text*/
+    font-size: 36px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#about-me {
+    position: relative;
+    bottom: 130px;
+    border-right-style: solid;
+}
+
+
+#work {
+    position: relative;
+    border-right-style: solid;
+    bottom: 70px;
+}
+
+
+#contact-me {
+    position: relative;
+    border-right-style: solid;
+    margin-top: 750px;
+}
+
+
+main {
+    
+/*adjusts position of main content*/
+    margin-left: 220px;
+
+}
+
+
+/*defines bborder around all 5 content boxes*/
+main div ul {
+    border: solid;
+    list-style: none;
+}
+
+
+/*1st box in main content*/
+main div ul li {
+    
+    
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-grow: 1;
+    flex-direction: column;
+    flex-flow: row wrap;
+    
+}
+
+
+.flex-container-2 {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.one, .two {
+    height: 45%;
+}
+
+.flex-item {
+    display: inline;
+    
+    border-color: aqua;  
+    
+}
+
+.flex-1 {
+    background-image: url(../assets/Pictures/macmiller-abstract.jpg);
+    flex: 100%;
+ 
+    /*sets zoom level of picture*/
+   background-size: 75%;
+    
+/*sets what area of the picture is visible*/
+    background-position: center;
+
+    opacity: 50%;
+
+
+}
+
+.flex-2 {
+    background-image: url(../assets/Pictures/grumpycat.png);
+    background-position:left;
+    opacity: 50%;
+    zoom: 110%;
+    
+}
+
+.flex-3 {
+    background-color: rgb(12, 87, 156);
+    opacity: 50%;
+   
+}
+
+.flex-4 {
+    background-color: green;
+    opacity: 50%;
+    
+}
+
+.flex-5 {
+    background-color: blue;
+    opacity: 50%;
+    
+}
+
+/*sets location and style of box within flexbox*/
+.mini-box {
+    max-height: auto;
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 150px;
+    border: solid 3px aqua;
+    width: min-content;
+    height: auto;
+    position: relative;
+    top: 40%;
+    background-color: aqua;
+    right: 20px;
+}
+
+
+#same-size-box {
+    width: 49%;
+    height: 30%;
+}
+
+#different-size-box {
+    min-height: 400px;
+}
+
+
+#internal-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    
+}
+
+
+/*CONTROLS ALL HOVER SHIFTS FOR 1ST BOX*/
+.hover1:hover::before,
+.hover1:focus::before {
+    transform: scale(0);
+}
+
+
+/*CONTROLS ALL HOVER SHIFTS FOR 1ST BOX*/
+.hover1:hover {
+    background: url(../assets/Pictures/macmiller-abstract.jpg);
+    opacity: 100%;
+    flex: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 500ms;
+/*sets zoom level of picture*/
+    background-size: 75%;
+/*sets what area of the picture is visible*/
+    background-position: center;
+}
+
+
+/*CONTROLS HOVER SHIFT FOR 2ND PIC*/
+.hover2:hover::before,
+.hover2:focus::before {
+    transform: scale(0);
+}
+
+
+/*CONTROLS HOVER SHIFT FOR 2ND PIC*/
+.hover2:hover {
+    background: url(../assets/Pictures/grumpycat.png);
+    opacity: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 500ms;
+    background-position:left;
+
+}
+
+
+/*CONTROLS HOVER SHIFT FOR 3RD PIC*/
+.hover3:hover::before,
+.hover3:focus::before {
+    transform: scale(0);
+}
+
+
+/*CONTROLS HOVER SHIFT FOR 3RD PIC*/
+.hover3:hover {
+    background-color: blue;
+    opacity: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 500ms;
+    background-position:left;
+
+}
+
+
+/*CONTROLS HOVER SHIFT FOR 4TH PIC*/
+.hover4:hover::before,
+.hover4:focus::before {
+    transform: scale(0);
+}
+
+
+/*CONTROLS HOVER SHIFT FOR 4TH PIC*/
+.hover4:hover {
+    background-color: green;
+    opacity: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 500ms;
+    background-position:left;
+
+}
+
+/*CONTROLS HOVER SHIFT FOR 5TH PIC*/
+.hover5:hover::before,
+.hover5:focus::before {
+    transform: scale(0);
+}
+
+
+/*CONTROLS HOVER SHIFT FOR 5TH PIC*/
+.hover5:hover {
+    background-color: purple;
+    opacity: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: 500ms;
+    background-position:left;
+
+}
+footer {
+    padding-left: 44%;
+}
+
+
+footer ul li {
+    display: inline;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*OLD
+.header {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aqua;
+    color: blue;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.title {
+    display: inline-block;  
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.aside {
+    list-style-type: underline;
+}
+
+
+.navigation {
+    display: inline-flex;
+    list-style-type: none;
+    white-space: 10px;
+}
+
+
+layout position of 5 content boxes
+main {
+   display: flex; 
+   flex-wrap: flex;
+}
+
+.contact-link {
+    display: inline-flex;
+    list-style-type: none;
+    
+}
